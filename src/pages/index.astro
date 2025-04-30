@@ -1,0 +1,53 @@
+---
+import "../styles/styles.css";
+import panelScript from '/scripts/script.js';
+---
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>21 Días Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Imagenes/PI.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="map"></div>
+<button class="estudia-btn" onclick="abrirEstudia()">Estudia</button>
+<div id="overlay" class="modal-overlay" onclick="cerrarTodo()"></div>
+
+<!-- Estudia -->
+<div id="modalPi" class="modal">
+  <span class="close-btn" onclick="cerrarTodo()">×</span>
+  <h2 style="font-family: 'KGPerfectPenmanship', Arial, sans-serif;">¿Sabías que π es?</h2>
+  <p>3.14159265358979323846264338327950288419716939937510</p>
+  <button class="modal-btn" onclick="practicar()">Practicar</button>
+</div>
+
+<!-- Practica -->
+<div id="modalPractica" class="modal">
+  <span class="close-btn" onclick="cerrarTodo()">×</span>
+  <h2 style="font-family: 'KGPerfectPenmanship', Arial, sans-serif;">Escribe los dígitos de π:</h2>
+  <input type="text" id="piInput" class="pi-input" placeholder="Empieza por 3.14...">
+  <button class="modal-btn" onclick="comprobar()">Comprobar</button>
+  <div id="resultado" class="resultado"></div>
+</div>
+
+<!-- Info -->
+<div id="modalInfo" class="modal">
+  <span class="close-btn" onclick="cerrarTodo()">×</span>
+  <h2 style="font-family: 'KGPerfectPenmanship', Arial, sans-serif; text-decoration: underline;">Información</h2>
+  <div class="info-text">
+    ¿Cómo sabemos dónde está Nil Ojeda, Misho y Guanyar?<br><br>
+    En sus redes publican una serie de pistas que la comunidad las resuelve y aquí ponemos la dirección en el mapa a base de sus historias.
+  </div>
+
+  <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Hoy están Nil Ojeda, Misho y Guanyar en el 21 días en... Sevilla <a href="https://t.co/oxLIbAnSki">pic.twitter.com/oxLIbAnSki</a></p>&mdash; MikeTroll YT (@Josecortes__07) <a href="https://twitter.com/Josecortes__07/status/1917203971879449056?ref_src=twsrc%5Etfw">April 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Nil Ojeda acaba de publicar una historia la cual muestra que esta en Sevilla, mi pregunta es: Estará en Sevilla? O eso quiere que pensemos? En mi opinión no esta en Sevilla y la historia la tiene grabada de ayer. Os leo! <a href="https://t.co/CquXGNrOEY">pic.twitter.com/CquXGNrOEY</a></p>&mdash; NilNoTeEscapas (@nilnoteescapas) <a href="https://twitter.com/nilnoteescapas/status/1917195547762430055?ref_src=twsrc%5Etfw">April 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="/scripts/script.js" type="module" client:load></script>
+</body>
+</html>

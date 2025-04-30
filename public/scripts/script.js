@@ -3,12 +3,20 @@ var bounds = [
   [44.5, 5.0]
 ];
 
+var initialView = [40.4168, -3.7038];
+var initialZoom = 6;
+
+if (window.innerWidth <= 768) {
+    initialView = [39.5, -3.5];
+    initialZoom = 5;
+}
+
 var map = L.map('map', {
   maxBounds: bounds,
   maxBoundsViscosity: 1.0,
   minZoom: 5,
   maxZoom: 18
-}).setView([40.4168, -3.7038], 6);
+}).setView(initialView, initialZoom);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'

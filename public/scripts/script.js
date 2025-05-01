@@ -32,10 +32,10 @@ infoControl.onAdd = function (map) {
 infoControl.addTo(map);
 
 // Circulo
-var centroPI = [37.3886, -5.9823]; // Centro de Sevilla
+var centroPI = [40.65, -4.70]; // Centro de Sevilla
 
-var offsetLat = 0.42; // Aumentado ligeramente
-var offsetLng = 0.47; // Aumentado para mantener forma circular
+var offsetLat = 0.38; // Aumentado ligeramente
+var offsetLng = 0.50; // Aumentado para mantener forma circular
 
 var imageBounds = [
 [centroPI[0] - offsetLat, centroPI[1] - offsetLng],

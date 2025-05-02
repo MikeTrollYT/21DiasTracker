@@ -139,9 +139,9 @@ function comprobar() {
 }
 
 // Alerta
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
   abriralerta();
-};
+});
 
 function abriralerta() {
   document.getElementById('Alerta').classList.add('show');

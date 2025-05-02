@@ -70,6 +70,7 @@ function cerrarTodo() {
   document.getElementById('modalPractica').classList.remove('show');
   document.getElementById('modalInfo').classList.remove('show');
   document.getElementById('overlay').classList.remove('show');
+  document.getElementById('Alerta').classList.remove('show');
   document.getElementById('resultado').textContent = "";
   document.getElementById('piInput').value = "";
 }
@@ -137,10 +138,20 @@ function comprobar() {
   }
 }
 
+// Alerta
+window.onload = function() {
+  abriralerta();
+};
+
+function abriralerta() {
+  document.getElementById('Alerta').classList.add('show');
+  document.getElementById('overlay').classList.add('show');
+}
+
 // Exponer funciones globalmente
 window.abrirEstudia = abrirEstudia;
 window.practicar = practicar;
 window.abrirInfo = abrirInfo;
 window.cerrarTodo = cerrarTodo;
 window.comprobar = comprobar;
-
+window.abriralerta = abriralerta;

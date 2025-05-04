@@ -32,7 +32,7 @@ infoControl.onAdd = function (map) {
 infoControl.addTo(map);
 
 // Circulo
-var centroPI = [41.8067, -6.7569]; 
+var centroPI = [43.3174, -1.9812]; 
 
 var offsetLat = 0.38; 
 var offsetLng = 0.50; 
@@ -139,14 +139,14 @@ function comprobar() {
 }
 
 // Alerta
-document.addEventListener('DOMContentLoaded', function() {
-  abriralerta();
-});
+//document.addEventListener('DOMContentLoaded', function() {
+//  abriralerta();
+//});
 
-function abriralerta() {
-  document.getElementById('Alerta').classList.add('show');
-  document.getElementById('overlay').classList.add('show');
-}
+//function abriralerta() {
+//  document.getElementById('Alerta').classList.add('show');
+//  document.getElementById('overlay').classList.add('show');
+//}
 
 // Exponer funciones globalmente
 window.abrirEstudia = abrirEstudia;

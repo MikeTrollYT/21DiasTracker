@@ -32,7 +32,7 @@ infoControl.onAdd = function (map) {
 infoControl.addTo(map);
 
 // Circulo
-var centroPI = [39.463705, -0.372171]; 
+var centroPI = [37.9861, -1.1306]; 
 
 var offsetLat = 0.38; 
 var offsetLng = 0.50; 

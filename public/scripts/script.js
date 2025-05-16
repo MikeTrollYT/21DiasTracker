@@ -148,7 +148,7 @@ function abriralerta() {
   document.getElementById('overlay').classList.add('show');
 }
 
-Exponer funciones globalmente
+// Exponer funciones globalmente
 window.abrirEstudia = abrirEstudia;
 window.practicar = practicar;
 window.abrirInfo = abrirInfo;

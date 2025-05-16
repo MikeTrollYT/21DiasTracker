@@ -139,16 +139,16 @@ function comprobar() {
 }
 
 // Alerta
-//document.addEventListener('DOMContentLoaded', function() {
-//  abriralerta();
-//});
+document.addEventListener('DOMContentLoaded', function() {
+  abriralerta();
+});
 
-//function abriralerta() {
-//  document.getElementById('Alerta').classList.add('show');
-//  document.getElementById('overlay').classList.add('show');
-//}
+function abriralerta() {
+  document.getElementById('Alerta').classList.add('show');
+  document.getElementById('overlay').classList.add('show');
+}
 
-// Exponer funciones globalmente
+Exponer funciones globalmente
 window.abrirEstudia = abrirEstudia;
 window.practicar = practicar;
 window.abrirInfo = abrirInfo;
